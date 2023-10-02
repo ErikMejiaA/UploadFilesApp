@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.7.0.slim.js" defer></script>
+    <script src="js/bootstrap/bootstrap.min.js" defer></script>
+	<script src="js/mainMenu.js" async></script>
+	<script src="app.js" defer type="module"></script>
+    <script src="js/enviarArchivos.js" type="module" defer></script>
+	<title>AdminSite</title>
+</head>
+<body>
+	<body>
+        <!-- SIDEBAR -->
+        <section id="sidebar">
+            <a href="#" class="brand"><i class='bx bxs-smile icon'></i> AdminSite</a>
+            <ul class="side-menu">
+                <li><a href="#" class="active"><i class='bx bxs-dashboard icon' ></i> Dashboard</a></li>
+                <li class="divider" data-text="registros">Cuerpo</li>
+                <li>
+                    <a href="#" data-opcion="rTeams" class="optMenu"><i class='bx bxs-notepad icon'></i>REGISTRO<i class='bx bx-chevron-right icon-right' ></i></a>
+                    <ul class="side-dropdown">
+                        <li><a href="#" data-opcion="rteam" class="optMenu">Prueba UPLOAD FILES</a></li>
+                        <li><a href="#" data-opcion="lstteam" class="optMenu">vacio</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-opcion="rCampers" class="optMenu"><i class='bx bxs-notepad icon'></i>vacio<i class='bx bx-chevron-right icon-right' ></i></a>
+                    <ul class="side-dropdown">
+                        <li><a href="#" data-opcion="rc" class="optMenu">vacio</a></li>
+                        <li><a href="#" data-opcion="lstc" class="optMenu">vacio</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-opcion="rSkill" class="optMenu"><i class='bx bxs-notepad icon'></i>vacio<i class='bx bx-chevron-right icon-right' ></i></a>
+                    <ul class="side-dropdown">
+                        <li><a href="#" data-opcion="rskill" class="optMenu">vacio</a></li>
+                        <li><a href="#" data-opcion="lstskill" class="optMenu">vacio</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-opcion="rModulos" class="optMenu"><i class='bx bxs-notepad icon' ></i>vacio<i class='bx bx-chevron-right icon-right' ></i></a>
+                    <ul class="side-dropdown">
+                        <li><a href="#" data-opcion="rmodulo" class="optMenu">vacio</a></li>
+                        <li><a href="#" data-opcion="lstmodulo" class="optMenu">vacio</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-opcion="rEvaluacion" class="optMenu"><i class='bx bxs-notepad icon'></i>vacio<i class='bx bx-chevron-right icon-right' ></i></a>
+                    <ul class="side-dropdown">
+                        <li><a href="#" data-opcion="rcc" class="optMenu">vacio</a></li>
+                        <li><a href="#" data-opcion="lstn" class="optMenu">vacio</a></li>
+                    </ul>
+                </li>
+                <!--<li><a href="#" data-opcion="rc" class="optMenu"><i class='bx bxs-chart icon' ></i> Registrar campers</a></li>-->
+                <!--<li><a href="#" data-opcion="lstc" class="optMenu"><i class='bx bxs-widget icon' ></i> Listado campers</a></li>-->
+                <li class="divider" data-text="busquedas">vacio</li>
+                <li>
+                    <a href="#" data-opcion="bCampers" class="optMenu"><i class='bx bxs-notepad icon'></i>vacio<i class='bx bx-chevron-right icon-right' ></i></a>
+                    <ul class="side-dropdown">
+                        <li><a href="#" data-opcion="cme" class="optMenu">vacio</a></li>
+                        <li><a href="#" data-opcion="cxt" class="optMenu">vacio</a></li>
+                        <li><a href="#" data-opcion="cxa" class="optMenu">vacio</a></li>
+                        <li><a href="#" data-opcion="crm" class="optMenu">vacio</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-opcion="bModulos" class="optMenu"><i class='bx bxs-notepad icon'></i>vacio<i class='bx bx-chevron-right icon-right' ></i></a>
+                    <ul class="side-dropdown">
+                        <li><a href="#" data-opcion="listmxs" class="optMenu">vacio</a></li>
+                        <li><a href="#" data-opcion="listmxc" class="optMenu">vacio</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <!-- SIDEBAR -->
+    
+        <!-- NAVBAR -->
+        <section id="content">
+            <!-- NAVBAR -->
+            <nav>
+                <i class='bx bx-menu toggle-sidebar' ></i>
+                <form action="#">
+                    
+                </form>
+                
+                <span class="divider"></span>
+                <div class="profile">
+                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+                    <ul class="profile-link">
+                        <li><a href="#"><i class='bx bxs-user-circle icon' ></i> Profile</a></li>
+                        <li><a href="#"><i class='bx bxs-cog' ></i> Settings</a></li>
+                        <li><a href="#"><i class='bx bxs-log-out-circle' ></i> Logout</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- NAVBAR -->
+    
+            <!-- MAIN -->
+            <main>
+                <h1 class="title">Dashboard</h1>
+                <ul class="breadcrumbs">
+                    <li><a href="#">Home</a></li>
+                    <li class="divider">/</li>
+                    <li><a href="#" class="active">Dashboard</a></li>
+                </ul>
+
+                <div class="container">
+
+                    <div class="container" id="imagen">
+                        <!--montar una imagen de fondo-->
+                        <div id="logo--centro">
+                            <img src="image/logo/go-for-floors.png" alt="logo" id="logo_centro-size">
+                        </div>
+                    </div>
+
+                    <div class="container" id="teams" style="display: none;">
+
+                        <!--sección de registro de los Teams-->
+                        <div class="container mt-3" id="registroTeams">
+                            <div class="card">
+                                <div class="card-header">
+                                  Formulario Carga de Archivos 
+                                </div>
+                                <div class="card-body" id="targeta">
+                
+                                    <form id="enviarArchivos">
+                
+                                        <div class="mb-3">
+                                            <label for="formFiles" class="form-label">Selecione un archivo o archivos:</label>
+                                            <input type="file" class="form-control" id="formFiles" name="formFiles" multiple>
+                                        </div>
+                                        <!--<button type="reset" value="reset" class="btn btn-info botonn" id="dato" data-habilitardesabilitar='[["#datos"], ["#dato"]]'>BUSCAR</button>
+                                        <button disabled type="submit" class="btn btn-success botonn" id="datos"
+                                        data-habilitardesabilitar='[["#dato"], ["#datos"]]'>NUEVA BUSQUEDA</button>-->
+                                        <button type="button" class="btn btn-info" id="enviar">ENVIAR</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--sección de listar los Teams-->
+                        <div class="container mt-3" id="listarTeams" style="display: none;">
+                            <!--<ver-lista-teams></ver-lista-teams>-->
+                        </div>
+
+                    </div>
+                    
+                </div>
+    
+            </main>
+            <!-- MAIN -->
+        </section>
+        <!-- NAVBAR -->  
+    </body>
+</body>
+</html>
