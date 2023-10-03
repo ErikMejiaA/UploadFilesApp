@@ -112,3 +112,6 @@ A continuación se explica el código y que es lo que se está haciendo:
 
 y de esta forma se concluye la construcción del EndPoint que permite subir archivos dentro de la misma aplicación.
 
+## Link Al Video (Explicación sobre como generar la UploadFiles en una WebApi con .Net Core 7)
+
+- [Link al Video UploadFiles](https://youtu.be/n932yIpFDg4)
