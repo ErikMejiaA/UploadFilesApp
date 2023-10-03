@@ -24,10 +24,10 @@ public class UploadFilesController : BaseApiController
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    public async Task<ActionResult<List<UploadRestoreDto>>> PostUploadFike(List<IFormFile> formFiles)
+    public async Task<ActionResult<List<UploadRestoreDto>>> PostUploadFile(List<IFormFile> formFiles)
     {
         
-        //Crear un directory para el alojamaiento de los archivos a cargar, sino existe crea uno nuevo 
+        //Crear un directory para el alojamaiento de los archivos a cargar, sino existe crea uno nuevo, Obtiene el directorio de trabajo actual de la aplicación.
         var directory = Path.Combine(Directory.GetCurrentDirectory(), "Uploads\\files");
 
         if (!Directory.Exists(directory))
@@ -55,7 +55,7 @@ public class UploadFilesController : BaseApiController
                 //acontinuacion se crea el achivo y se guarda en la ruta escrita anteriormente 
                 using (var crearArchivo = new FileStream(ruta, FileMode.Create))
                 {
-                    await file.CopyToAsync(crearArchivo);
+                    await file.CopyToAsync(crearArchivo); //copia los bytes de la secuancia actual y la escribe en otra secuencia. 
                 }
 
                 //agragamos el nuevo nombre de archivo creado al objeto y luego lo guardamos en la lista

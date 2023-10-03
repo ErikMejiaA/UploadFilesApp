@@ -9,7 +9,7 @@ let config={
 
 const postUploadFiles = async(data)=>{
     config.method = "POST";
-    config.body=JSON.stringify(data);
+    config.body = data;
     let res= await ( await fetch("http://localhost:5000/api/UploadFiles",config)).json();
     console.log(res);
 }
